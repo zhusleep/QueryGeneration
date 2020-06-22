@@ -1,7 +1,7 @@
 import sys
 import os
 import argparse
-sys.path.append('/iyunwen/lcong/QueryGeneration')
+sys.path.append('../train')
 import tensorflow as tf
 import numpy as np
 
@@ -40,7 +40,7 @@ parser.add_argument(
 parser.add_argument(
     '-model_ckpt',
     dest='model_ckpt',
-    default='/iyunwen/lcong/model/model.ckpt-850000',
+    default='/home/zhukaihua/Downloads/Query2Query/model.ckpt-850000',
     type=str,
     help='checkpoint file for the model',
 )
